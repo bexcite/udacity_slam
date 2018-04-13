@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>si_bot</name>
+  <name>slam_project</name>
   <version>0.0.0</version>
   <description>The slam_project package</description>
 
@@ -49,6 +49,8 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rtabmap_ros</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

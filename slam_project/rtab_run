@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CATKIN_WS_PATH=/home/pavlo/si_catkin_ws
+CATKIN_WS_PATH=/home/pavlo/slam_catkin_ws
 
 echo ' '
 read -p 'Would you like to clear the previous map database? (y/n): ' ansinput
