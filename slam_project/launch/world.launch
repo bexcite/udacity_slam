@@ -9,7 +9,8 @@
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
   <arg name="bot" default="si" /> <!-- udacity -->
-  <arg name="world_file" default="$(find si_bot)/worlds/jackal_race.world" />
+  <!-- <arg name="world_file" default="$(find si_bot)/worlds/jackal_race.world" /> -->
+  <arg name="world_file" default="$(find slam_project)/worlds/kitchen_dining.world" />
 
   <include file="$(find si_bot)/launch/robot_description.launch">
     <arg name="bot" value="$(arg bot)" />
