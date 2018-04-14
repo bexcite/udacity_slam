@@ -434,8 +434,6 @@
   </link>
 
 
-
-
   <!-- ====== Camera ============= -->
 
   <joint name="camera_joint" type="fixed">
@@ -466,6 +464,14 @@
       </geometry>
     </visual>
   </link>
+
+  <!-- Fix for rotated point cloud -->
+  <joint name="camera_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707" />
+    <child link="camera_link" />
+    <parent link="camera" />
+  </joint>
+  <link name="camera_link"></link>
 
 
   <!-- ======= Laser Rangefinder ======= -->
