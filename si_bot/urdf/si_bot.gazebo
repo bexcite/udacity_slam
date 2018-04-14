@@ -99,7 +99,7 @@
 </gazebo>
 
   <!-- hokuyo -->
-  <!--
+
   <gazebo reference="hokuyo">
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
@@ -131,7 +131,7 @@
       </plugin>
     </sensor>
   </gazebo>
--->
+
 
   <gazebo reference="chassis">
     <material>Gazebo/Grey</material>

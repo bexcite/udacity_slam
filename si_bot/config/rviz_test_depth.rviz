@@ -77,7 +77,42 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        dome0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        dome1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hokuyo:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_ear:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_eye:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_ear:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_eye:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -91,6 +126,11 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        stand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -109,6 +149,7 @@ Visualization Manager:
       Value: true
       Visibility:
         Grid: true
+        LaserScan: true
         PointCloud2: true
         RobotModel: true
         TF: true
@@ -158,6 +199,36 @@ Visualization Manager:
         {}
       Update Interval: 0
       Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 999999
+      Min Color: 0; 0; 0
+      Min Intensity: -3.67705683e-32
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Flat Squares
+      Topic: /udacity_bot/laser/scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48

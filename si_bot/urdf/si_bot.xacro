@@ -475,7 +475,7 @@
 
 
   <!-- ======= Laser Rangefinder ======= -->
-  <!--
+
   <joint name="hokuyo_joint" type="fixed">
     <origin xyz="0 0 .05" />
     <child link="hokuyo" />
@@ -505,7 +505,7 @@
       </geometry>
     </visual>
   </link>
--->
+
 
 
 
