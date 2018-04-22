@@ -6,6 +6,21 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find si_bot)/urdf/$(arg bot)_bot.xacro'"/>
 
 
+  <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan"
+        output="screen">
+      <param name="range_min" type="double" value="0.10" />
+      <param name="range_max" type="double" value="10.0" />
+      <param name="output_frame_id" type="string" value="hokuyo" />
+
+      <!-- Input -->
+      <remap from="image" to="/udacity_bot/camera1/depth/image_raw" />
+
+      <!-- Output -->
+      <remap from="scan" to="/udacity_bot/laser1/scan" />
+
+  </node>
+
+
   <!-- Send fake joint values-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
     <param name="use_gui" value="false"/>

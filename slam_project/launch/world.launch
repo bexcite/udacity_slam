@@ -35,6 +35,8 @@
   <node name="rviz" pkg="rviz" type="rviz" respawn="false"
       args="-d $(find udacity_bot)/launch/Rvizconfig1.rviz"/>
 -->
+<!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false"
+    args="-d $(find si_bot)/config/rviz_test_depth.rviz"/> -->
 
   <!-- <node name="rostopic" pkg="rostopic" type="rostopic" args="pub -r 10 /cmd_vel geometry_msgs/Twist '{linear:  {x: 0.4, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.4}}'"/> -->
 

@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /LaserScan1
       Splitter Ratio: 0.5
     Tree Height: 369
   - Class: rviz/Selection
@@ -214,9 +215,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 999999
+      Max Intensity: -999999
       Min Color: 0; 0; 0
-      Min Intensity: -3.67705683e-32
+      Min Intensity: 999999
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -224,7 +225,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.00999999978
       Style: Flat Squares
-      Topic: /udacity_bot/laser/scan
+      Topic: /udacity_bot/laser1/scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
