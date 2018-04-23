@@ -18,7 +18,8 @@
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <!-- <arg name="world_name" value="$(find si_bot)/worlds/jackal_race.world"/> -->
     <!-- <arg name="world_name" value="$(find si_bot)/worlds/udacity.world"/> -->
-    <arg name="world_name" value="$(find slam_project)/worlds/kitchen_dining.world"/>
+    <!-- <arg name="world_name" value="$(find slam_project)/worlds/kitchen_dining.world"/> -->
+    <arg name="world_name" value="$(find slam_project)/worlds/my_lab_distinct.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>

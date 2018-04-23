@@ -21,13 +21,17 @@ fi
 
 echo ' '
 
-read -p 'Enter target world destination or d for default: ' input_choice
+read -p 'Enter target world destination or "d" for default or "l" for my_lab_distinct: ' input_choice
 
 if [ “$input_choice” = “d” ]
 then
  # echo roslaunch slam_project world.launch world_file:=$CATKIN_WS_PATH/src/slam_project/worlds/kitchen_dining.world 2>/dev/null
  # x-terminal-emulator -e roslaunch slam_project world.launch 2>/dev/null &
  x-terminal-emulator -e roslaunch slam_project world.launch world_file:=$CATKIN_WS_PATH/src/udacity_slam/slam_project/worlds/kitchen_dining.world 2>/dev/null &
+
+elif [ “$input_choice” = “l” ]
+then
+ x-terminal-emulator -e roslaunch slam_project world.launch world_file:=$CATKIN_WS_PATH/src/udacity_slam/slam_project/worlds/my_lab_distinct.world 2>/dev/null &
 
 else
  x-terminal-emulator -e roslaunch slam_project world.launch world_file:=$input_choice 2>/dev/null &
